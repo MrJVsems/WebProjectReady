@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' type="text/css" href="stylesheets/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="row flex-nowrap justify-content-between align-items-center">
+    <div class="col-4 pt-1">
+        <img class="bi me-2" src="images/nlogo.png" alt width="22" height="57">
+        <span class="fs-4">NBA Managment system</span>
+    </div>
+    <div class="col-4 text-center">
+        <h4  class="blog-header-logo text-dark">Add a new matchup for regular season</h4>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+        <a href="/" class="btn btn-sm btn-outline-secondary">Back</a>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">Season: 2016-2017</div>
+        <div class="col col-lg-2">Matchup: Regular Season</div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">Date: <input type="date" name="calendar"> </div>
+        <div class="col col-lg-2">Time: <input type="text" size="6"> </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">Location: <input type="text" size="50"></div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">Team(Away):</div>
+        <div class="col col-lg-2">Team(Home):</div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <select name="select2">
+                <option selected="selected">Houston Rockets</option>
+                <option>WoW</option>
+                <option>WoW</option>
+                <option>WoW</option>
+            </select>
+        </div>
+        <div class="col-md-auto">
+            <h1>VS</h1>
+        </div>
+        <div class="col-md-auto">
+            <select name="select2">
+                <option selected="selected">Cleveland Cavaliers</option>
+                <option>WoW</option>
+                <option>WoW</option>
+                <option>WoW</option>
+            </select>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    The current season in 2021-2022, and the NBA already has a history of many years
+</div>
+</body>
+</html>

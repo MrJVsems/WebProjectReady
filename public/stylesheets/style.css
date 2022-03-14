@@ -28,7 +28,7 @@ a {
 
 .stylePhoto{
   position: relative; /* Фиксированное положение */
-  top:400px;
+  top:300px;
   vertical-align:bottom;
   text-align: center;
 }
@@ -48,4 +48,8 @@ button:hover {
   margin: auto;
   position: center;
   bottom: 50px;
+}
+
+.loginform{
+  text-align: center;
 }

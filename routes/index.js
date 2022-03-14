@@ -18,4 +18,16 @@ router.get('/TeamsMain', function(req, res, next) {
 router.get('/TeamDetail', function(req, res, next) {
   res.render('TeamDetail', { title: 'Express' });
 });
+router.get('/AdminLogin', function(req, res, next) {
+  res.render('AdminLogin', { title: 'Express' });
+});
+router.get('/evadmin', function(req, res, next) {
+  res.render('EventAdminMenu', { title: 'Express' });
+});
+router.get('/mngmtch', function(req, res, next) {
+  res.render('ManageMatchups', { title: 'Express' });
+});
+router.get('/nwmtch', function(req, res, next) {
+  res.render('NewMatchup', { title: 'Express' });
+});
 module.exports = router;
