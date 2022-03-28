@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "090303-19_SemSem",
+    "password": "semsem",
+    "database": "090303-19_SemSem",
+    "host": "84.201.184.150",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "090303-19_ssa",
+    "password": "ssassa",
+    "database": "090303-19_ssa",
+    "host": "84.201.184.150",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "090303-19_ssa",
+    "password": "ssassa",
+    "database": "090303-19_ssa",
+    "host": "84.201.184.150",
+    "dialect": "mysql"
+  }
+}

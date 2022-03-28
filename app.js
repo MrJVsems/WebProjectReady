@@ -6,6 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const db = require('./public/db.js')
+db.authenticate()
+    .then(() => console.log('Database connected...'))
+    .catch(err => console.log('Error: '+ err))
 
 var app = express();
 
@@ -37,5 +41,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;

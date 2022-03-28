@@ -31,3 +31,4 @@ router.get('/nwmtch', function(req, res, next) {
   res.render('NewMatchup', { title: 'Express' });
 });
 module.exports = router;
+
