@@ -157,17 +157,20 @@
           <tr>
             <th>Southeast</th>
           </tr>
+          <% for (let team of teams) {%>
           <tr>
             <td rowspan="2">
               <img class="bi me-2" src="images/nlogo.png" alt width="22" height="57">
             </td>
-            <td colspan=3>Team Name</td>
+            <td colspan=3><%= team.Name%></td>
           </tr>
           <tr>
             <td>Roster</td>
             <td>Match Up</td>
             <td>First LineUp</td>
           </tr>
+
+            <%}%>
           <tr>
             <td rowspan="2">
               <img class="bi me-2" src="images/nlogo.png" alt width="22" height="57">
