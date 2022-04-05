@@ -14,10 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Team.init({
-    TeamId: DataTypes.INTEGER,
+    //TeamId: DataTypes.INTEGER,
     Name: DataTypes.STRING,
     Abbr: DataTypes.STRING,
-    Logo: DataTypes.STRING
+    Logo: DataTypes.STRING,
+    Division: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Team',
