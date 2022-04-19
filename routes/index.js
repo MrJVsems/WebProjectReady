@@ -1,6 +1,7 @@
 var express = require('express');
+const {Model} = require("sequelize");
 var router = express.Router();
-const {Team} = require('../models');
+const {Team, Player} = require('../models');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,7 +20,12 @@ router.get('/TeamsMain', async function(req, res, next) {
   res.render('TeamsMain', {title: 'Express' ,teams});
 });
 router.get('/TeamDetail/:idTeam', async function(req, res, next) {
-  console.log(req.params);
+  const idTeam=req.params.idTeam;
+  const teamDetail = await Team.findByPk(idTeam);
+  const player = await Player.findOne({TeamId:idTeam});
+
+  console.log(player);
+
   res.render('TeamDetail', {title: 'Express'});
 });
 router.get('/AdminLogin', function(req, res, next) {
