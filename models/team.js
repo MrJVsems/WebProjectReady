@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     //TeamId: DataTypes.INTEGER,
     Name: DataTypes.STRING,
     Abbr: DataTypes.STRING,
-    Logo: DataTypes.STRING,
-    Division: DataTypes.STRING
+    Logo: DataTypes.STRING//,
+    //Division: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Team',

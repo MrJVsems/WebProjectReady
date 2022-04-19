@@ -18,10 +18,9 @@ router.get('/TeamsMain', async function(req, res, next) {
   console.log(teams);
   res.render('TeamsMain', {title: 'Express' ,teams});
 });
-router.get('/TeamDetail', async function(req, res, next) {
-  let teams = await Team.findAll();
-  console.log(teams);
-  res.render('TeamDetail', {title: 'Express', teams});
+router.get('/TeamDetail/:idTeam', async function(req, res, next) {
+  console.log(req.params);
+  res.render('TeamDetail', {title: 'Express'});
 });
 router.get('/AdminLogin', function(req, res, next) {
   res.render('AdminLogin', { title: 'Express' });
