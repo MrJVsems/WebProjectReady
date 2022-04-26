@@ -36,7 +36,14 @@ module.exports = {
         type: Sequelize.CHAR
       },
       TeamId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Player',
+          },
+          key: 'id',
+        },
+        allowNull: false
       },
       createdAt: {
         allowNull: false,

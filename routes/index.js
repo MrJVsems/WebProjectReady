@@ -22,11 +22,12 @@ router.get('/TeamsMain', async function(req, res, next) {
 router.get('/TeamDetail/:idTeam', async function(req, res, next) {
   const idTeam=req.params.idTeam;
   const teamDetail = await Team.findByPk(idTeam);
-  const player = await Player.findOne({TeamId:idTeam});
+  const player = await teamDetail.getPlayer();
+  //const player = await Player.findAll({TeamId:idTeam});
 
   console.log(player);
 
-  res.render('TeamDetail', {title: 'Express'});
+  res.render('TeamDetail', {teamDetail, player});
 });
 router.get('/AdminLogin', function(req, res, next) {
   res.render('AdminLogin', { title: 'Express' });
